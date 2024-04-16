@@ -6,31 +6,28 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
 .form {
   
   border: 2px solid rgb(49, 45, 38);
   margin: auto;
+  margin-left: 450px;
   margin-top: 200px;
   max-width: 300px;
   text-align: left;
   padding: 80px;
-  background: white;
+  background:white;
   color: black;
 }
-
 .form input {
   width:100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
 }
-
 .form button {
   background-color: #4CAF50;
   width: 100%;
@@ -43,28 +40,22 @@ code {
   display: inline-block;
   font-size: 16px;
 }
-
 .form-create-user{
-  margin-top: 180px;
+  margin-top: 160px;
   margin-left: 500px
 }
-
 .form-profile {
   margin-top: 10px
 }
-
 .title{
   color:red;
 }
-
 label, button, input, p {
   color: black;
 }
 .signin {
   color: red;
 }
-
-
 .sidebar {
   height: 500px;
   width: 260px;
@@ -77,16 +68,15 @@ label, button, input, p {
   background-color: rgb(41, 40, 40);
   border-radius: 10px;
   }
-
 .sidebar div{
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  text-align: left;
+  margin-left: 40px
 }
-
 .main-container{
   display: flex;
   
 }
-
 .delete-button {
   background-color: rgb(180, 31, 31);
   width: 14%;
@@ -99,4 +89,40 @@ label, button, input, p {
   font-size: 16px;
  
 }
+.register-link {
+  color: red
+}
+.profile:before {
+  font-family:fontawesome;
+  content:'\f007';
+  font-style:normal;
+  
+}
+.posts:before {
+  font-family:fontawesome;
+  content:'\f073';
+  font-style:normal;
+  
+}
+.followers:before {
+  font-family:fontawesome;
+  content:'\f277';
+  font-style:normal;
+  
+}
+.news:before {
+  font-family:fontawesome;
+  content:'\f500';
+  font-style:normal;
+  
+}
+.events:before {
+  font-family:fontawesome;
+  content:'\f1ea';
+  font-style:normal;
+  
+}
 
+.bob{
+  background-color: purple;
+}

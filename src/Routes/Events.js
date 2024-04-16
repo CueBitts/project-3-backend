@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Events.css'
-
-
 function Events() {
-
     const url = "https://app.ticketmaster.com/discovery/v2/events?apikey=04WKZ7WVEAcbcNYcKtN23cIYqJCLFBGm&locale=*"
     
     const [event, setEvent] = useState([])
@@ -14,7 +11,6 @@ function Events() {
                 setEvent(data._embedded.events)
             
             })
-
         }
         useEffect(() => {
             fetchEvents()
@@ -40,7 +36,5 @@ function Events() {
         </div>
     )
 }
-
 export default Events
-
 // http://app.ticketmaster.com/discovery/v1/events.json?key=04WKZ7WVEAcbcNYcKtN23cIYqJCLFBGm

@@ -11,7 +11,6 @@
     top: 0;
   } */
 
-
   .header{
     position: fixed; 
     top: 0;
@@ -37,7 +36,6 @@
     flex-direction: column;
     margin-left: 50px;
   }
-
 .profile-pic-header {
     width: 30px;
     height: 30px;
@@ -46,7 +44,23 @@
     padding-top: 10px;
     
 }
-
 .profile-name{
   margin-left: -10px
+}
+.header-no-account {
+  position: fixed; 
+    top: 0;
+    height: 97px;
+    width: 100%;
+    text-align: left;
+    background: rgb(41, 40, 40);
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.app-page{
+  margin-bottom: 70px;
+  margin-right: 250px;
 }

@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react'
 import './News.css'
 
 function News() {
+    const [news, setNews] = useState([])
     
     const url= "https://newsapi.org/v2/everything?q=events&from=2022-05-27&sortBy=popularity&apiKey=84248c2621e84e6594d32cbd4592ab3b"
     
-    const [news, setNews] = useState([])
     const fetchNews = () => {
         fetch(url)
             .then(res => res.json())
@@ -39,3 +39,4 @@ function News() {
 }
 
 export default News
+

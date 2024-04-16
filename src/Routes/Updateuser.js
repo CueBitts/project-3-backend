@@ -45,7 +45,7 @@ function Updateuser(props) {
                 />
                 <br/>
 
-            <label htmlFor="profilePic">Profile Picture Linksds: </label>
+            <label htmlFor="profilePic">Profile Picture Link: </label>
             <input 
                 type="text"
                 value={formState.profilePic} 
@@ -64,7 +64,7 @@ function Updateuser(props) {
                 />
                 <br/>
             
-             <input type="submit" value='Update Personfdf'/>  
+             <input type="submit" value='Update Person'/>  
 
             <div>
               <p>Already have account?<Link className='signin' to ='/signin'> Sign In </Link></p>

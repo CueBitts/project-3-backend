@@ -2,19 +2,15 @@ import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router';
 import '../index.css'
-
-function Createaccnt(props) {
+function NewAccount(props) {
         const initialState ={
               username:'',
               profilePic:'', 
               password:'',
              }
-
-
       const [formState, setFormState]=useState(initialState);
       const [dbCheck, setDbCheck] = useState('')
       const navigate =useNavigate()
-
       const handleChange = event =>{
               setFormState({...formState,[event.target.id]:event.target.value});
       }
@@ -25,8 +21,6 @@ function Createaccnt(props) {
               navigate('/signin')
               //fetch to retrieve from db with get (backend)
               // if check username ====username && formdata. pasword ==== password in db){navigate()}
-
-
               // const userURL = "http://localhost:4000/users/";
               // const getUser = () => {
               //     fetch(userURL)
@@ -38,11 +32,10 @@ function Createaccnt(props) {
               //     navigate()
               //   }
       }
-
   return (
    
-    <div>Create Account
-        <form className='form form-create-user' onSubmit={handleSubmit}>
+    <div>
+        <form className='form' onSubmit={handleSubmit}>
             
             <label htmlFor="username">Username: </label>
             <input 
@@ -52,7 +45,6 @@ function Createaccnt(props) {
                 onChange={handleChange}
                 />
                 <br/>
-
             <label htmlFor="profilePic">Profile Picture Link: </label>
             <input 
                 id="profilePic" 
@@ -60,7 +52,6 @@ function Createaccnt(props) {
                 value={formState.profilePic} 
                 onChange={handleChange}
                 />
-
             <label htmlFor="password">Password:</label>
             <input 
                 id="password" 
@@ -71,20 +62,15 @@ function Createaccnt(props) {
                 <br/>
             
              <button type="submit">Create Account</button>   
-
             <div>
               <p>Already have account?<Link className='signin' to ='/signin'>Sign In</Link></p>
             </div>
-
         </form>
              
     </div>
   )
 }
-
-export default Createaccnt
-
-
+export default NewAccount
 //adding password confirmation
 // onSubmit={formState.password===formState.passwordConfirm? handleSubmit: ""
 {/* <label 
